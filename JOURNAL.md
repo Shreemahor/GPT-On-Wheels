@@ -10,7 +10,7 @@ This is my journal of the design and building process of **GPT On Wheels ðŸ§ ðŸ›
 You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/322).
 
 
-## 10/9/2025 - Pi Issue and Researching Materials  
+## 10/9/2025 4 AM - Pi Issue and Researching Materials  
 
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--75308df336d2fe8a5ea71c18008c0dc86831ce69/image.png)
 ![rpicam.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE2NCwicHVyIjoiYmxvYl9pZCJ9fQ==--3fd0a1e424d3fd0d34813a035d43061335c9f9e3/rpicam.jpg)
@@ -29,4 +29,35 @@ I decided that the model would work like a layered cake. I am considering which 
 # Raspberry Pi Issue
 
 I spent a ***VERY LONG TIME*** trying to connect my ribbon cable to my pi. This is the cable between a camera and the pi, but it was very hard to connect. I previously accidently bended and damaged it so that didn't help, and the python packages weren't installed properly. I finally solved this by using a flashlight and little screwdriver for adjustment and finally situating the cable. I had to do the camera installation process 3 times.  
+
+## 10/9/2025 8 PM - CAD and Spreadsheet  
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--04948fa60bbb96739973966321c84fd80eff9092/image.png)
+
+# In FreeCAD
+
+## Model
+
+Just started a new model (pictured above). Its very simple now because it is in its initial phase.
+
+## Spreadsheet
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI3NiwicHVyIjoiYmxvYl9pZCJ9fQ==--7d661704c7fccbe2dd8da90bf6d22e7641bdf17e/image.png)
+
+I made a spreadsheet to organize my values so I would not have to end up redoing everything and figure out I had the wrong measurements, *like my last project*. To ensure that does not happen, I will continuously update it and refer to it.
+
+#### Linking Error
+
+For a long time I additionally tried to actively link my spreadsheet to the CAD Model, but FreeCAD wasn't allowing it. This process required links & alaisses and very complicated. I spent lots of time trying to get this done, but then I decided just manually referring to it was enough for now. This is were most of my time was drained.
+
+# Research
+
+## Standoffs
+
+I also did some research. I finalized the mounting process. I would use standoffs and screws and found a nice set on Amazon.
+
+## Speakers
+
+I am going to look more into speakers. The model I liked was out of stock.
+  
 
