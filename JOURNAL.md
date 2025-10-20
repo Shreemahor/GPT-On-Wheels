@@ -134,3 +134,89 @@ One of many commands I ran to ensure it works:
 the error is good as it confirms it is working
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTQ0MywicHVyIjoiYmxvYl9pZCJ9fQ==--0835298225b76d091d2500a5662fb7d65eac4578/image.png)  
 
+## 10/19/2025 - Working Car Prototype  
+
+![IMG_20251019_195711770 (1).jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzY0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--6879c572cbf160f5c87e369ce2c0c49161a94f2f/IMG_20251019_195711770%20(1).jpg)
+# Jump from planning
+
+I needed all the planning, sample CAD, and research to get this far.
+I also ended up using extra parts I did not plan for like tape and plastic bands.
+
+# Components
+
+### L298N Motor Driver
+
+This was used to connect the motors to the pi. It has 4 outputs (it can control two motor pairs) and also has speed control
+
+#### Powering Issue
+
+For testing I used the pi's **5V** but that would not suffice in when the pi is independent of the cable, so I needed to use an external power source. I already knew this so had a *18650 battery*.
+
+But the biggest problem was that 5V was not enough for 4 motors so I added two batteries but all 4 did not get enough power still. I spent a lot of time trying to fix a simple problem and even tried to get it to run on only 2 motors because getting all 4 was very hard. I tried:
+	- Using a breadboard
+	- using thinner wires
+	- Swapping the motors
+	- and more
+Finally I realized that I had connected the wire of the batteries to the '5V' but that limits their voltage to only 5V so I needed to change it to 12V even though the batteries did not reach that much.
+![IMG_20251013_213022055.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYwNSwicHVyIjoiYmxvYl9pZCJ9fQ==--72982ef0b8bead26e7e2fee88ab50d5b634e0a52/IMG_20251013_213022055.jpg)
+
+### Pi
+
+I used *GPIO 19 and 18* for PWM control and adjusting motor speed. I used other GPIOs for forward and backward control
+
+### Power Bank
+
+*5V 10A Miadi Power Bank* for powering the Pi. I got a warning saying that the pi did not get enough power so I needed to hit the power button anytime I wanted it to draw full power. I also went into config.txt in firmware and updated it with this exact line:
+***usb_max_current_enable=1***
+
+### 18650 Batteries
+
+From Tokeygawa and have a case which had a on off switch which was useful when I forgot to connect PWM and had no jumper, resulting in the motors spinning forever. But, luckily I was able to just switch the batteries off before any serious damage.
+
+### Motors & Tires
+
+The tires had friction well and for the most part (except one that was slightly off) fit onto the motors and spun properly.
+
+#### Connection Issue
+
+The other issue that drained lots of time was that the wheels would not connect to my cardboard base.
+I experimented with the following:
+1. Normal Scotch Tape - this was very fragile and did not last at all
+2. Screws
+	- I used M2 Screws and Connectors but then this combo was too long and the cardboard and motor slots
+	  did not have the required length, so I tried glueing on cardboard and even inserting cardboard to
+	  to finish the fit
+	- This worked but it was not as tight as I wanted it to be and was still a little wobbly so I 
+	  searched for more solutions
+3. Double Sided Tape
+	- This worked surprisingly well although after some trial and error I found that the metal part of
+	  the motor was most adhesive to the tape 
+4. Wires
+ 	- putting a wire band through the two motor hole slots and tying it to the base
+ 	- heavier but stronger
+ 	- ran out of wire bands so I needed to use old male to male wires
+5. Glue - worked very poorly
+
+I finally decide on - 
+***Double Sided Tape + Wires*** this combo worked best
+
+## Body
+
+I had two other initial bodies. One broke and the other was deteriorated from all of my connection method attempts. This is the initial old one:
+![IMG_20251011_164423560.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYyOSwicHVyIjoiYmxvYl9pZCJ9fQ==--fd1adeb7d8e64a79367cd3da8f0bcb38c6023fb8/IMG_20251011_164423560.jpg)
+
+This is the final body, it has black tape so that the same error that the old body had does not also exist here. The black tape adds reinforcement. Finally I also later added a expo marker because I needed some blunt object to keep the cardboard sides from toppling.
+![IMG_20251018_164123293.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYzMCwicHVyIjoiYmxvYl9pZCJ9fQ==--33281746d57fa7b9feef49a00771a6e0d65bf925/IMG_20251018_164123293.jpg)
+
+## Final
+
+I wired the components on the body.
+![IMG_20251018_115444022.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--43863828d337b263e923399324a5aa7ef6acc686/IMG_20251018_115444022.jpg)
+
+# Future 
+
+I must connect the ai model I have to this and plan for speakers and audio. I will also work more on the CAD.
+
+Picture midmotion:
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzY0MCwicHVyIjoiYmxvYl9pZCJ9fQ==--1b16d342218bd850f3bffb60b78da65e2130d67d/image.png)  
+
