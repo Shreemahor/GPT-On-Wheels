@@ -6,10 +6,6 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **GPT On Wheels 🧠🛞**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/322).
-
-
 ## 10/8/2025 - Pi Issue and Researching Materials  
 
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTE2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--75308df336d2fe8a5ea71c18008c0dc86831ce69/image.png)
@@ -219,4 +215,190 @@ I must connect the ai model I have to this and plan for speakers and audio. I wi
 
 Picture midmotion:
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzY0MCwicHVyIjoiYmxvYl9pZCJ9fQ==--1b16d342218bd850f3bffb60b78da65e2130d67d/image.png)  
+
+## 11/2/2025 - Code & Camera  
+
+![IMG_20251026_215910434](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg3OSwicHVyIjoiYmxvYl9pZCJ9fQ==--9bebca35fa6f81db306ea3c1f1debabca63a6288/IMG_20251026_215910434.jpg)
+### Recap
+
+Before what I had was a basic car, and this code was very simple and straightforward. Now I need to start using the camera and actually integrate the ai into it.
+
+# Camera Mounting
+
+Before, the camera was backward. This was one of the most annoying parts that was *very unnecessary* and made me almost want to quit the project in anger. *This camera would not stay in one place.*
+
+## Tries
+
+I needed the camera to not be backwards, so I tried many methods like:
+	- cotton
+	- cardboard stand
+	- scotch tape
+	- -string
+But all of these failed and I just ended up wasting lots of time
+
+#### Case
+
+I don't have a 3d printer at home, unfortunately, so I need to use my school club's common 3d printer. Since there are 20 people using the same printer and the printer was blacklisted from the school wifi, it was very hard to get this printed, but I managed because my friend was kind enough to give his phone hotspot. But anyways, the problem with the case was that it was too tight for the camera, and even though it could work it could not fully fit in. If I had spent more time on this, I might have been able to force it to stay. Also, the screw holes were too small, but considering that it was my first cad, it was expected. After trying more combinations of the previous tries and the case, I decided it was best to just see if the ai could recognize what it was doing with a backward blurry image. 2.5 or 3 hours had passed from this alone, so I could not handle it anymore.
+
+## Picture
+
+![IMG_20251102_113132734](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg0NSwicHVyIjoiYmxvYl9pZCJ9fQ==--ac8b5b038c491accb8c3f4bad1f72020b797130c/IMG_20251102_113132734.jpg)
+
+# Code
+
+The code for this project is so extensive and explorable that it could be considering a software project too. I am going to put the full file in the repository but explain some components here. By the way, other than debugging a couple lines with syntax / simple name errors, I wrote all of the *153 lines of code by myself, without any AI* .This was the part of this log that took the most time, but unlike the camera, I regret nothing because I truly got lots of work done. Also, everything is in *Python*.
+
+Used libraries:
+	+ Langchain & related (ai framework, but due its enormous size, has dozens of individual libraries)
+	+ mcp (core logic)
+	+ Picamera2 (to control the camera)
+	+ gpiozero (way to control hardware in pi 5)
+	+ base64 (for image)
+	+ dotenv (to load my .env, but you don't really need it)
+	+ asnycio (ai takes time)
+
+## Model
+
+***This is the novel part of this project and what sets my car apart from every other car***.
+
+### LLM
+
+The core of the code, without it there is nothing to actually control the car. This is the *brain 🧠*
+of the project.
+
+openrouter_api_key = os.getenv("OPENAI_API_KEY")
+
+llm = ChatOpenAI(model="meta-llama/llama-4-maverick:free",
+
+                   api_key=openrouter_api_key,
+
+                   base_url="https://openrouter.ai/api/v1"
+
+)
+
+Langchain, an open framework for creating ai agents, is used in python for this example, and openrouter is used for this particular llm but I went between many and different providers.
+
+### Image processing
+
+with open(r"/home/shreemahor5/Python/Robot/Robot/image.png", 'rb') as image_file:
+
+    image_bytes = image_file.read()
+
+    base64_bytes = base64.b64encode(image_bytes).decode("utf-8")
+
+prompt = [
+
+{"type": "text", "text": "Describe the image"},
+
+{"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_bytes}"}},
+
+]
+
+A series of transformations occur to the image file to make it suitable, then it is put in a suitable format for the llm, a list of dictionaries.
+
+### Function & Connection
+
+This is the most relevant snippet of the main ai call function:
+
+async def agent(description):
+
+    async with stdio_client(server_params) as (read, write):
+
+        async with ClientSession(read, write) as session:
+
+            await session.initialize()
+
+            tools = await load_mcp_tools(session)
+
+            agent = create_react_agent(llm, tools)
+
+These must be async functions because the ai does not take a fixed amount of time to process anything - leaving the function to wait for its response, so asnyc functions are necessary. All the rest of the code does is just connect what I already have to my MCP using Langchain, and I will get to this.
+
+## MCP
+
+Now that the brain is done we need something for it to use, so we need *tools 🛠️*. In order to do this, I use something called ***MCP***, model context protocol, which is used to connect llms with tools, giving them the ability to reason and choose what to do, effectively making them agents. Without this nothing would be possible, its revolutionary.
+
+### Sample tool
+
+from mcp.server.fastmcp import FastMCP
+
+mcp = FastMCP("Movement")
+
+@mcp.tool()
+
+def forward():
+
+    print("\nForward\n")
+
+    motor_a.forward(0.5)
+
+    sleep(2)
+
+    motor_a.stop()
+
+There are more tools, but this is just one. In order to make a function an MCP tool, you must use the @mcp.tool() decorator on the function. It pairs very well with langchain.
+
+### Motors
+
+motor_a = Motor(forward=IN1, backward=IN2, enable=ENA, pwm=True)
+
+motor_b = Motor(forward=IN3, backward=IN4, enable=ENB, pwm=True)
+
+Motor a is the front wheel pair and motor b is the back wheel pair. This is how you control the motors, as defined in gpiozero docs.
+
+## Main file
+
+### Camera
+
+cam.start()
+sleep(2)
+cam.capture_file("image.jpg")
+
+This is just a small snippet, but it uses picamera2.
+
+### Putting it all together
+
+while True:
+    if input("Do you want to run the test? (y/n): ").lower() != 'y':
+        break
+	answer = llm.invoke([HumanMessage(content=prompt)]).content
+    print(answer)
+    asyncio.run(agent(answer))
+
+All this does is put together all the pieces of the code. The way it works is by having two llms, one interpreting the image, and one interpreting its interpretation, but I will go more in depth next log since this one is already too long.
+
+# Result
+
+I wrote some instructions on a paper, then made the ai interpet what to do, these are some.
+![IMG_20251102_125657262](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg3MywicHVyIjoiYmxvYl9pZCJ9fQ==--58689cddf85e900f36940356c9842f73e9630b13/IMG_20251102_125657262.jpg)
+
+Most of the time, it actually went forward or said that there was nothing to be done if there were no instructions, but it was a little confused as to when to go backward.
+
+![IMG_20251026_215910434](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--166e8c9ddd6cecd5dd84b55daf0d7992e65c02f2/IMG_20251026_215910434.jpg)
+
+## Errors
+
+Of course, my code did not work first try.
+
+### MCP not connecting
+
+I already expected this because I got the same error while I was experimenting with MCP a long time ago, I restarted the server, saved, stopped among other things because some combination worked last time. But, this time that was not enough, but it turned out that I had misspelt the name of the file. But it was good, I did the other checks on the server anyways.
+
+### AI Hallucinations
+
+Sometimes the ai would claim to be using an old mcp server, or just not see the tools. Sometimes, it just broke and took a long time. These are just some of its failures, but one that stood out and was the funniest error I have gotten so far in the project was this:
+![mcp error](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg3NiwicHVyIjoiYmxvYl9pZCJ9fQ==--447c4274cb83a51a62f8e3e2e0fc7522cea4f941/mcp%20error.png)
+
+## Additional Notes
+
+The idea is uniquely mine, and I *did NOT use any youtube video for code or software guidance*. I used a thorough book and the online docs for some libraries, particularly, gpiozero docs was most helpful.
+
+##### Car
+
+Moves fine, but the front wheels bend inward, which is not nice. Also, more than once, mid-movement, the wheels have just come rolling of, so the car could still be improved. I am not working on cad but keeping it at the back of my mind.
+
+## Future
+
+I will explain more of the architecture and logical flow, since here I gave code snippets. Also, I will put the full code files in my repository. I am looking into putting a distance sensor to make sure the ai does not crash, the HC-SR04, which I already have.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg3NywicHVyIjoiYmxvYl9pZCJ9fQ==--c41e7cd5698ef9bd24d843a125e35044fbf8c18a/image.png)  
 
