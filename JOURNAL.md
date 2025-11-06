@@ -402,3 +402,99 @@ Moves fine, but the front wheels bend inward, which is not nice. Also, more than
 I will explain more of the architecture and logical flow, since here I gave code snippets. Also, I will put the full code files in my repository. I am looking into putting a distance sensor to make sure the ai does not crash, the HC-SR04, which I already have.
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg3NywicHVyIjoiYmxvYl9pZCJ9fQ==--c41e7cd5698ef9bd24d843a125e35044fbf8c18a/image.png)  
 
+## 11/5/2025 - Distance Sensor  
+
+![WhatsApp Image 2025-11-05 at 21.58.01_6dbba28d](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgxMSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a5770a933ce2b8edfb8e209e2df5cfb27cdbc8f/WhatsApp%20Image%202025-11-05%20at%2021.58.01_6dbba28d.jpg)
+*HC-SR04 Wiring*
+
+# Recap
+
+I previously got the camera and ai working.
+
+## Problems along the way
+
+#### Car Structure
+
+The car's wheels sometimes lean to one side or the other, so I needed some way for the car's structure to be more safe. So, I put an expo market to sort of hold the cardboard pieces against each other and prevent them from bending inwards. I also used a glue stick in a similar way for underneath. I also added a second expo marker, but then once I found it ineffective, I just removed it.
+![WhatsApp Image 2025-11-05 at 21.18.16_e0731f09](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--be67518ad792392e0528c8b475b54668ee07de2a/WhatsApp%20Image%202025-11-05%20at%2021.18.16_e0731f09.jpg)
+Before, I tried using the scotch tape and cardboard again, but it did go according to plan.
+
+#### Fragile
+
+Midway, sometimes the ground would just disconnect. Midway, the wheels would just come flying off.
+There is really nothing I can do about this except upgrade to plastic case, but I don't have a 3d printer.
+
+#### Camera
+
+The camera, before, would not open. This was because I forgot to close the camera after opening it. I just forgot about his point on the last log.
+
+# Distance Sensor
+
+The distance sensor is necessary to make sure that the car does not crash. I am using the HC-SR04.
+
+## Hardware
+
+### Wiring Diagram
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgwNywicHVyIjoiYmxvYl9pZCJ9fQ==--06cb98f2816b81c4718a4abfbefe48f954a11967/image.png)
+Although, voltage will be supplied by the 18650 batteries.
+
+### Math & Resistors
+
+There are two resistors: a *470 ohms and a 330 ohms*.
+They are used to form a voltage divider because the echo has *5V* but the pi's pins are *3V3*.
+By connected 470 to ground, 330 to echo, and free ends to another pin, a voltage divider is formed to achieve this. The ideal ratio is *2:3* so any resistor combo that gets this is okay.
+
+#### Other resistors
+
+I did not have a 470 resistor so I put a 330 ohm and 220 ohm in series to form a 470. However, I just replaced it with a *510 ohm* later when trying to solve an error where the distance sensor picked up the same thing always
+
+### Mounting
+
+I realized that if I wanted to remain organized I needed a breadboard there, so I put everything on the breadboard and then put that on the car. The space was congested and it was hard to put wires in.
+
+## Code
+
+\# in main
+ECHO_PIN = 6
+TRIGGER_PIN = 13
+sensor = DistanceSensor(echo=ECHO_PIN, trigger=TRIGGER_PIN, max_distance=4)
+
+\# in file
+from gpiozero import DistanceSensor
+from time import sleep
+from main import sensor
+
+while True:
+    print('Distance to nearest object is', round(sensor.distance * 100, 2), 'cm')
+    sleep(2)
+
+This initializes the distance sensor and prints how far away the object in front is in cm. The round converts it to cm and then rounds it to two decimal points. There is a 2 second delay between each reading.
+
+### Same Value Error
+
+No matter how far away the wall was, the sensor would always 1.25cm. There was also another variation of this same error sometimes where it would only print 100cm.
+![Screenshot 2025-10-31 183854](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgwOCwicHVyIjoiYmxvYl9pZCJ9fQ==--8654a7e86ad0096d31142b153795a16e81995698/Screenshot%202025-10-31%20183854.png)
+I spend a long time trying to fix this by restarting power, trying different GPIO pins and more. It turns out that I just needed to connect the entire system to my raspberry pi's ground. A seemingly complex problem actually had a very simple solution.
+
+### No Echo Error
+
+There was an error that said that no echo was received. This error just comes on and off around 20% of the time. I suspect this is because the HC-SR04 requires 5V and it sometimes does not get enough power because of the motors. I suspect this because this happens usually after a long motor run. The best solution I found to this was to just wait 30s and make sure the connections were secure, but if I had a better power source this might entirely disappear.
+
+# Final Output
+
+Final Wiring:
+![WhatsApp Image 2025-11-05 at 21.58.01_9a4c9b45](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgwOSwicHVyIjoiYmxvYl9pZCJ9fQ==--047dd7d82d6f764f988b03d9293cc02d4c7402a2/WhatsApp%20Image%202025-11-05%20at%2021.58.01_9a4c9b45.jpg)
+
+#### Wires
+
+I initially used M to M, but then once I mounted the breadboard I used M to M connected with one F to F then another M to M. I realized this was redundant and was just better using a longer M to M and had to  spend more time replacing all the wires.
+
+## Output
+
+![Screenshot 2025-10-31 183748](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--dc91c30d15bc47762063c39ec7ba5dcaeea2b399/Screenshot%202025-10-31%20183748.png)
+
+#### Future
+
+Connect ai, distance sensor, and camera. Bring everything together.  
+
