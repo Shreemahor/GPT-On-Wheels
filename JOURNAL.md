@@ -498,3 +498,120 @@ I initially used M to M, but then once I mounted the breadboard I used M to M co
 
 Connect ai, distance sensor, and camera. Bring everything together.  
 
+## 11/8/2025 - Fully Running  
+
+![IMG_20251108_172522364](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYyNiwicHVyIjoiYmxvYl9pZCJ9fQ==--7e31b05e042a80f0c1e5f7f2881f00e8721cdc2d/IMG_20251108_172522364.jpg)
+
+# Turning
+
+The car could go back and forth but would not turn. This is because it was quite heavy and rectangular. Those two attributes mainly prevent the car from turning. I tried around 20 different approaches.
+
+#### Long arc
+
+It would go back very far, then slightly turn, then go forward and repeat this. This technically worked but it took around a minute and so much space it was not even worth it.
+
+#### Back Forward
+
+The front wheels would stay still and the back wheels would go full power, the intent of this was to sort of force the back of the car, and in turn, the entire car to turn, but since the weight was in the back of the car, this did not work, and the car almost moved as normal.
+
+#### Opposite
+
+Back would go backward, and front would go forward. This ended up producing a loud squeaky noise as the motors went against each other.
+
+#### Front Forward
+
+Back wheels would stay still, and front would go full power. This was the technique that showed the *most promise* since it was quick. Initially it got around 5 degrees, but it was something.
+
+#### Other
+
+- Other Speeds
+- Pivot maneuver
+- Hybrid of other methods
+
+## Physics
+
+### Front Forward
+
+Front forward was the method that worked best, but it still needed lots of improvement, I was sure that with some modifications it would work.
+
+### Physics Experiment
+
+In order to understand how long to do front forward and how to improve it I needed to know its specifications. I conducted an experiment on it to see what it does. Materials I used were a ruler, protractor and tape. I put a piece of tape on the right front wheel to use as a reference point. Then I run front forward for 5 seconds. I then, using the protractor, measured the angle it had traveled. I also measured the distance the top of the car was from the tape to see how far it went forward, and I measured how far the right wheel was from the tape. I did this multiple times and recorded the results.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--795b3743fb1aec2049610d0b7d6d64668fbe6b22/image.png)
+
+Results: it would got 5-10 degrees, it would move forward 12cm, and the right wheel was around 14.3cm away from it original spot.
+
+Using these results I adjust the code to run longer, but this took way too long. I also had a look at the distance it would travel and tweaked it. This really helped me fix the issue but I also made some other adjustments.
+1. Weight on the back
+2. Left wheel loosened
+3. Right wheel lubricated
+
+#### Weight on the back
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYyMywicHVyIjoiYmxvYl9pZCJ9fQ==--a6a0ff19d16602f552f186895cbff1d77184e872/image.png)
+If there is more weight on the back it will turn better. This is because the lighter front will move with the force, but the heavier back will not move, but since they are connected, in the front's attempt to move it will pivot around the back.
+Masses tried:
+	- marker
+	- eraser
+	- stapler
+
+I also tried with no masses. *Adding to much mass was NOT good* because nothing would happen then. I realized the the best setup was to lighten the front by removing one marker off it and putting a marker at the back.
+
+#### Left wheel loosened
+
+Usually a tire pushes down on the floor, and with the help of physics moves forward. Hower if I tilt that tire, then it will apply a force slightly to the left/right and that will help the tire pivot.
+
+#### Right wheel lubricated
+
+What tries to oppose this tilted tire is the other front tire because it still has a force that propels forward, at no angle. If this were to be also tilted, the entire front would lost structural balance and fall to the ground. Problem: need to negate the force causing forward motion without tilting the tire. Solution: Remove friction. All tires are made out of rough material and have grooves to catch friction. If you cover the grooves and make the material smooth, friction would significantly reduce. This is why I covered the right tire with scotch tape. I tried using scotch tape throughout this project, but this is the only time it actually helped.
+
+## Turning
+
+By taking advantage of physics I was able to make the large rectangular car with only four wheels turn.
+
+# AI ON WHEELS!
+
+The car could fully go and explore my house on its own with the AI.
+
+### Pseudocode
+
+if (distance to object is far):
+	AI()
+	go()
+elif (distance to object is greater than turning distance):
+	AI()
+	turn()
+else:
+	## it's already too late
+	backward()
+
+The code follows this basic structure, combining everything discussed in my previous logs where I do detailed into the code.
+
+##### Problems
+
+- Sometimes the object would not be detected because the motors got the power and the distance sensor said "no echo"
+- On each crash, the front wheels would take the damage, right front wheels was okay, but left front wheel was already tilted so it ended up falling the most.
+- Ground would just disconnect because the car was going fast
+- It would turn slightly more or less, especially after the front wheels were injured.
+All of these were just random errors.
+
+### Modes
+
+There is discovery mode where the car and AI freely roam, logging what happens. I also had a mode where the car was controlled by the AI and the AI would determine what to do based on the camera.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYxOSwicHVyIjoiYmxvYl9pZCJ9fQ==--7828dd58218ac69243d80fe9c83810ae11d50a8e/image.png)
+wanted to see what the ai would think of the plushy
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--75e0a0f7443b1b4e7c5c1bb922f0eb7ed9d87174/image.png)
+balloon
+
+#### Future
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--17dda2f1101e4d902db26fe6f73dfad35cedbabe/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYyMiwicHVyIjoiYmxvYl9pZCJ9fQ==--319b34139124c617a80ae0e4b46458b635c6338f/image.png)
+
+I also spent a bunch of hours on the test runs and tested with even more objects like a glue bottle.
+Also, the little plastic face was not something I 3d printed myself, but something that I salvaged from a previous project using that sensor.
+For now, the basics are pretty much done. Next, I will do more research and planning and less hands-on work as a break.  
+
