@@ -6,3 +6,9 @@ Li-Po 18650 Batteries,1,https://www.amazon.com/dp/B0CSW7FN4S,2 18650 Batteries
 Breadboard,1,https://www.amazon.com/ELEGOO-Breadboard-Solderless-Breadboards-Electronics/dp/B0CXF1B6GB,Makes wiring easier
 HC-SRO4 Distance Sensor,1,https://www.amazon.com/Organizer-Ultrasonic-Distance-MEGA2560-ElecRight/dp/B07RGB4W8V,For obstacle detection
 Power Bank,1,https://www.amazon.com/gp/aw/d/B08T8TDS8S,Power for Pi
+
+Speaker,1,https://www.aliexpress.us/item/3256809497780944.html,So the AI can talk
+Microphone,1,https://www.aliexpress.us/item/3256808573398680.html,So the AI can hear
+Mechanum Wheels,1,https://www.aliexpress.us/item/3256808341904607.html,For omni-directional movement
+L298N Driver,1,https://www.aliexpress.us/item/3256807937306073.html,Second driver necessary for mechanum wheels
+30cm Ribbon Cable,1,https://www.aliexpress.us/item/3256804021249325.html,So the camera can be accurately placed and connect
