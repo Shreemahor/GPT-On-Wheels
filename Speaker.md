@@ -15,6 +15,6 @@ the AI will process the audio from the speaker, then it will reutrn its response
 
 It is connected to the pi with a usb.
 
-<img width="696" height="239" alt="image" src="https://github.com/user-attachments/assets/46ff600a-7dfc-43f7-af5b-70fe3c2dfd3c" />
+<img width="656" height="106" alt="image" src="https://github.com/user-attachments/assets/440909b2-8319-478c-b356-77185e34cc4b" />
 
 Note: This speaker's look is not the exact same as the real speaker
