@@ -18,7 +18,7 @@ working with the bus in code. One of these commands is 'i2cdetect -y 1' to see w
 
 ### Role of XShut
 
-The MPU6050 accelerometer is on the same bus as the sensor, but the pi can distinguish them because they are different. However, if there are two sensor, then 
+The MPU6050 accelerometer is on the same I2C as the sensor, but the pi can distinguish them because they are different. However, if there are two sensor, then 
 how will the pi differenciate them? Thats why XShut is needed to control the behavior of the VL53L1X. It can sort of 'turn off' a sensor so that the pi does
 not detect it.
 
@@ -31,3 +31,14 @@ The code will:
 So the pi is not confused, and all of the sensors can work in harmony.
 
 ## Wiring
+
+<img width="523" height="475" alt="image" src="https://github.com/user-attachments/assets/0d6377ef-9b92-4045-ba45-8211a19dacc2" />
+
+The second sensor's XShut just goes to one of the pi's GPIOs. If the MB-102 does not work, as a worst case scenario, the pi's 3V pins can provide enouph power.
+The GPIO pin of the VL531X is unnecessary.
+
+## Only Issue
+
+There is only one problem with these TOF sensors. ***They require soldering.*** I have looked everywhere for a pre-soldered one - all of my other components are 
+presoldered but these sensors only come soldered. *My plan to work around this is to get a solder gun from the Toolbag with the tickets I already have.* I would have
+already redeemed it but I want to wait to make sure that this design gets approval before getting the solder gun.
