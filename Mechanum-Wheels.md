@@ -103,4 +103,6 @@ Also, if the right hand wheels seem slightly smaller than the left hand wheels i
 not affect functionality. The wires leading down just go to the Pi's GPIO pins. This is the same type of orientation as the current prototype but with double battery
 pairs and double L298Ns.
 
+Some good videos I watched and rewatched and places I learned everything from: https://www.youtube.com/watch?v=AlsCUzCCc-k, https://en.wikipedia.org/wiki/Mecanum_wheel, https://www.youtube.com/watch?v=noqBUEgyQ8A, https://www.youtube.com/watch?v=gnSW2QpkGXQ
+
 **In summary, mechanum wheels are great for the car's movement and function by using physics vectors**
