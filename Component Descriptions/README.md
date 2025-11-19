@@ -1,5 +1,29 @@
-These are the component descriptions of the components of GPT On Wheels. Most of the components in the full project are in here. All of the funded compoenents - ones that require a grant and that I do not have currently
-are in the Unfunded directory. The components that I already have are in Funded, these are components whose usage is not straightforward. **Each component description
-has information about its significance, software, wiring, and more along with plenty of images.** All of the images are handpicked by me and a handful are made by me. There is also more on how they work 
-and some problems they solve and their invaluable contributions to the project. Each description is very detailed and has everything one needs to know about the component.
-*First check out the unfunding components before moving on to the funded ones.* 
+# Component Descriptions
+
+This directory contains comprehensive descriptions for components of GPT On Wheels, an Autonomous AI robot.
+
+## Guide
+
+### Subdirectories
+
+*Funded* - Contains components that require funding
+
+*Unfunded* - Contains components that I already have and dont require funding
+
+Check the funded components first!
+
+### Structure of each description
+
+1. ***Significance***: Explanation of why this component is necessary and its contributions to the project
+2. ***Software***: Explanation of how this component will be controlled and handled by the software
+3. ***Wiring***: Explanation of the way this component is wired and set-up physically, including a diagram
+
+Also including:
+
+**Images**: Hand-picked and custom-created images for each component
+
+**Specifications**: History with components, problems faced before, issued solved, clever fix, and component specific details
+
+## Other
+
+Most components, components with depth and justfication are included but not every single component. Check the funded components first.
