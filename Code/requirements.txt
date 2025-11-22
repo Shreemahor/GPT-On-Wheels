@@ -10,3 +10,4 @@ picamera2
 dotenv
 pillow
 langchain-ollama
+gpiozero
