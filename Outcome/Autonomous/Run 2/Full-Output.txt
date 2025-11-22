@@ -1,0 +1,121 @@
+(.venv) shreemahor5@raspberrypi:~/Python/Robot $ /home/shreemahor5/Python/Robot/Robot/.venv/bin/python /home/shreemahor5/Python/Robot/Robot/autonomous.py
+going to MCP
+[0:11:58.542436350] [3674]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+125-69c6546d-dirty (2025-09-12T07:28:55BST)
+[0:11:58.550239670] [3695]  INFO RPI pisp.cpp:720 libpisp version v1.2.1 981977ff21f3 29-04-2025 (14:13:50)
+[0:11:58.553602022] [3695]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx519.json
+[0:11:58.559822415] [3695]  INFO Camera camera_manager.cpp:220 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a' for pipeline handler rpi/pisp
+[0:11:58.559902747] [3695]  INFO RPI pisp.cpp:1180 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[0:11:58.563417411] [3674]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-BGR888/sRGB (1) 1920x1080-RGGB_PISP_COMP1/RAW
+[0:11:58.563839073] [3695]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a - Selected sensor format: 1920x1080-SRGGB10_1X10/RAW - Selected CFE format: 1920x1080-PC1R/RAW
+/usr/lib/python3/dist-packages/gpiozero/input_devices.py:852: PWMSoftwareFallback: For more accurate readings, use the pigpio pin factory.See https://gpiozero.readthedocs.io/en/stable/api_input.html#distancesensor-hc-sr04 for more info
+  warnings.warn(PWMSoftwareFallback(
+Clear path (153.33 cm) - moving forward
+Clear path (99.05 cm) - moving forward
+obstacle at 69.49!
+Capturing
+The scene appears to be an interior wall, likely in a home or office. There's a light switch and a small bulletin board with colorful sticky notes attached to the wall. The overall impression is clean and simple.
+obstacle
+turning
+blocked
+turning
+obstacle at 70.75!
+Capturing
+The scene appears to be indoors, with a light-colored wall taking up most of the view. A cluster of sticky notes in various colors (green, yellow, pink) is affixed to the wall, suggesting a busy or organized space. A corner of a white object is visible in the lower right, hinting at other items in the room.
+obstacle
+turning
+blocked
+turning
+obstacle at 71.72!
+Capturing
+The scene shows a light gray wall with a bulletin board covered in numerous sticky notes of various colors. The notes appear to be densely packed, suggesting a busy household or a project in progress. A portion of a colorful image or calendar is visible at the top of the board.
+obstacle
+turning
+blocked
+turning
+^C
+Stopped
+
+Done
+
+The scene appears to be an interior wall, likely in a home or office. There's a light switch and a small bulletin board with colorful sticky notes attached to the wall. The overall impression is clean and simple.
+The scene appears to be indoors, with a light-colored wall taking up most of the view. A cluster of sticky notes in various colors (green, yellow, pink) is affixed to the wall, suggesting a busy or organized space. A corner of a white object is visible in the lower right, hinting at other items in the room.
+The scene shows a light gray wall with a bulletin board covered in numerous sticky notes of various colors. The notes appear to be densely packed, suggesting a busy household or a project in progress. A portion of a colorful image or calendar is visible at the top of the board.
+Stopped
+(.venv) shreemahor5@raspberrypi:~/Python/Robot $ /home/shreemahor5/Python/Robot/Robot/.venv/bin/python /home/shreemahor5/Python/Robot/Robot/autonomous.py
+going to MCP
+[0:13:51.891967328] [3909]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+125-69c6546d-dirty (2025-09-12T07:28:55BST)
+[0:13:51.899655764] [3933]  INFO RPI pisp.cpp:720 libpisp version v1.2.1 981977ff21f3 29-04-2025 (14:13:50)
+[0:13:51.903054244] [3933]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx519.json
+[0:13:51.909221059] [3933]  INFO Camera camera_manager.cpp:220 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a' for pipeline handler rpi/pisp
+[0:13:51.909317003] [3933]  INFO RPI pisp.cpp:1180 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[0:13:51.915251838] [3909]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-BGR888/sRGB (1) 1920x1080-RGGB_PISP_COMP1/RAW
+[0:13:51.915519818] [3933]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a - Selected sensor format: 1920x1080-SRGGB10_1X10/RAW - Selected CFE format: 1920x1080-PC1R/RAW
+/usr/lib/python3/dist-packages/gpiozero/input_devices.py:852: PWMSoftwareFallback: For more accurate readings, use the pigpio pin factory.See https://gpiozero.readthedocs.io/en/stable/api_input.html#distancesensor-hc-sr04 for more info
+  warnings.warn(PWMSoftwareFallback(
+Clear path (122.66 cm) - moving forward
+Clear path (83.3 cm) - moving forward
+obstacle at 67.21!
+Capturing
+The view appears to be inside a home, with a light switch mounted on a light-colored wall taking center stage. A small, pink object is visible in the upper left corner, and a portion of a yellow object is seen at the bottom of the frame. The overall impression is a simple, everyday domestic setting.
+obstacle
+turning
+blocked
+turning
+obstacle at 55.68!
+Capturing
+The view is dominated by a light-colored, likely white, wall. Above the wall, there's a bulletin board or display with numerous colorful sticky notes attached. The overall impression is a clean and organized space.
+obstacle
+turning
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Periodic image capture...
+The image shows a close-up view of a floor, likely tile or linoleum, with a textured surface. A portion of a white, curved object is visible, possibly a piece of furniture or appliance. The lighting is somewhat dim, creating a hazy and slightly blurred appearance.
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (212.7 cm) - moving forward
+Clear path (178.65 cm) - moving forward
+Periodic image capture...
+The view from the ground level appears to be inside a home, likely a hallway or entryway. There's a doorway visible on the left, leading to a darker space, and a large, white appliance (possibly a refrigerator) on the right. The overall scene is somewhat blurry, but suggests a clean and modern interior.
+Clear path (400.0 cm) - moving forward
+Clear path (93.46 cm) - moving forward
+Clear path (232.06 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (183.56 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (400.0 cm) - moving forward
+Clear path (176.02 cm) - moving forward
+Clear path (116.43 cm) - moving forward
+Periodic image capture...
+The image shows a bathroom setting, with a toilet taking center stage. There's a glimpse of a shower or bathtub in the background, and some toilet paper is visible near the toilet seat. The overall scene appears to be a standard, functional bathroom space.
+obstacle at 7.82!
+Capturing
+The view from the ground appears to be a muted, overcast scene. There's a large, indistinct shape in the foreground, possibly a building or large object, and a bright light source is visible above, likely the sun obscured by clouds. The overall impression is one of a hazy, somewhat dim environment.
+obstacle
+Too close
+turning
+blocked
+turning
+^C
+Stopped
+
+Done
+
+The view appears to be inside a home, with a light switch mounted on a light-colored wall taking center stage. A small, pink object is visible in the upper left corner, and a portion of a yellow object is seen at the bottom of the frame. The overall impression is a simple, everyday domestic setting.
+The view is dominated by a light-colored, likely white, wall. Above the wall, there's a bulletin board or display with numerous colorful sticky notes attached. The overall impression is a clean and organized space.
+The image shows a close-up view of a floor, likely tile or linoleum, with a textured surface. A portion of a white, curved object is visible, possibly a piece of furniture or appliance. The lighting is somewhat dim, creating a hazy and slightly blurred appearance.
+The view from the ground level appears to be inside a home, likely a hallway or entryway. There's a doorway visible on the left, leading to a darker space, and a large, white appliance (possibly a refrigerator) on the right. The overall scene is somewhat blurry, but suggests a clean and modern interior.
+The image shows a bathroom setting, with a toilet taking center stage. There's a glimpse of a shower or bathtub in the background, and some toilet paper is visible near the toilet seat. The overall scene appears to be a standard, functional bathroom space.
+The view from the ground appears to be a muted, overcast scene. There's a large, indistinct shape in the foreground, possibly a building or large object, and a bright light source is visible above, likely the sun obscured by clouds. The overall impression is one of a hazy, somewhat dim environment.
+Stopped

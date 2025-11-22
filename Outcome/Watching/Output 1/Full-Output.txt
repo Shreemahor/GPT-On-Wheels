@@ -1,0 +1,45 @@
+(.venv) shreemahor5@raspberrypi:~/Python/Robot $ /home/shreemahor5/Python/Robot/Robot/.venv/bin/python /home/shreemahor5/Python/Robot/Robot/view.py
+going to MCP
+Do you want to run the test? (y/n): y
+[1:32:43.911290568] [6175]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+125-69c6546d-dirty (2025-09-12T07:28:55BST)
+[1:32:43.919747715] [6215]  INFO RPI pisp.cpp:720 libpisp version v1.2.1 981977ff21f3 29-04-2025 (14:13:50)
+[1:32:43.923020459] [6215]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx519.json
+[1:32:43.930571425] [6215]  INFO Camera camera_manager.cpp:220 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a' for pipeline handler rpi/pisp
+[1:32:43.930878886] [6215]  INFO RPI pisp.cpp:1180 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a to CFE device /dev/media2 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[1:32:43.935953937] [6175]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-BGR888/sRGB (1) 1920x1080-RGGB_PISP_COMP1/RAW
+[1:32:43.936274454] [6215]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a - Selected sensor format: 1920x1080-SRGGB10_1X10/RAW - Selected CFE format: 1920x1080-PC1R/RAW
+The view from the ground shows a corner of a room with a white baseboard meeting a textured wall. A large, white cabinet or piece of furniture is partially visible, with vertical panels running along its side. The floor appears to be a dark wood or laminate.
+Do you want to run the test? (y/n): y
+[1:33:59.212651458] [6219]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+125-69c6546d-dirty (2025-09-12T07:28:55BST)
+[1:33:59.224719627] [6283]  INFO RPI pisp.cpp:720 libpisp version v1.2.1 981977ff21f3 29-04-2025 (14:13:50)
+[1:33:59.227653502] [6283]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx519.json
+[1:33:59.236343260] [6283]  INFO Camera camera_manager.cpp:220 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a' for pipeline handler rpi/pisp
+[1:33:59.236404704] [6283]  INFO RPI pisp.cpp:1180 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a to CFE device /dev/media2 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[1:33:59.241239979] [6219]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-BGR888/sRGB (1) 1920x1080-RGGB_PISP_COMP1/RAW
+[1:33:59.241546200] [6283]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a - Selected sensor format: 1920x1080-SRGGB10_1X10/RAW - Selected CFE format: 1920x1080-PC1R/RAW
+The scene appears to be indoors, likely a home, with a wooden floor. A large, yellow ball with brown spots rests against a white baseboard and a white door or wall panel. The wall itself is a muted gray color.
+Do you want to run the test? (y/n): y
+[1:35:08.009673405] [6287]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+125-69c6546d-dirty (2025-09-12T07:28:55BST)
+[1:35:08.017735963] [6351]  INFO RPI pisp.cpp:720 libpisp version v1.2.1 981977ff21f3 29-04-2025 (14:13:50)
+[1:35:08.020095045] [6351]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx519.json
+[1:35:08.026838830] [6351]  INFO Camera camera_manager.cpp:220 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a' for pipeline handler rpi/pisp
+[1:35:08.026934719] [6351]  INFO RPI pisp.cpp:1180 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a to CFE device /dev/media2 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[1:35:08.031885475] [6287]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-BGR888/sRGB (1) 1920x1080-RGGB_PISP_COMP1/RAW
+[1:35:08.032038455] [6351]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a - Selected sensor format: 1920x1080-SRGGB10_1X10/RAW - Selected CFE format: 1920x1080-PC1R/RAW
+From this low angle, I see a playful scene on a wooden floor. A blue Sully pillow and a large, patterned exercise ball are resting near a white baseboard and a white curtain. It looks like a cozy and fun space, perhaps a child's room.
+Do you want to run the test? (y/n): y
+[1:37:26.398286333] [6355]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+125-69c6546d-dirty (2025-09-12T07:28:55BST)
+[1:37:26.406085967] [6419]  INFO RPI pisp.cpp:720 libpisp version v1.2.1 981977ff21f3 29-04-2025 (14:13:50)
+[1:37:26.408283939] [6419]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx519.json
+[1:37:26.414337339] [6419]  INFO Camera camera_manager.cpp:220 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a' for pipeline handler rpi/pisp
+[1:37:26.414502746] [6419]  INFO RPI pisp.cpp:1180 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a to CFE device /dev/media2 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[1:37:26.418371618] [6355]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-BGR888/sRGB (1) 1920x1080-RGGB_PISP_COMP1/RAW
+[1:37:26.418527007] [6419]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx519@1a - Selected sensor format: 1920x1080-SRGGB10_1X10/RAW - Selected CFE format: 1920x1080-PC1R/RAW
+The scene appears to be indoors, likely a living room or playroom, with a wooden floor. There are three items on the floor: an orange balloon with dark spots, a blue pillow shaped like a cartoon character with one large eye, and a yellow balloon with a giraffe-like pattern. A white curtain or drape is visible in the background.
+Do you want to run the test? (y/n): n
+
+The view from the ground shows a corner of a room with a white baseboard meeting a textured wall. A large, white cabinet or piece of furniture is partially visible, with vertical panels running along its side. The floor appears to be a dark wood or laminate.
+The scene appears to be indoors, likely a home, with a wooden floor. A large, yellow ball with brown spots rests against a white baseboard and a white door or wall panel. The wall itself is a muted gray color.
+From this low angle, I see a playful scene on a wooden floor. A blue Sully pillow and a large, patterned exercise ball are resting near a white baseboard and a white curtain. It looks like a cozy and fun space, perhaps a child's room.
+The scene appears to be indoors, likely a living room or playroom, with a wooden floor. There are three items on the floor: an orange balloon with dark spots, a blue pillow shaped like a cartoon character with one large eye, and a yellow balloon with a giraffe-like pattern. A white curtain or drape is visible in the background.
+(.venv) shreemahor5@raspberrypi:~/Python/Robot $ 
