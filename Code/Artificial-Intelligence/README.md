@@ -24,7 +24,7 @@ installed on the pi then use Ollama
 6. replace model with this so it looks like:
    llm = ChatOpenAI(
     model="meta-llama/llama-4-scout:free", # this is only temporary and it will not work for interpret, for that it requires a more
-    # high end lm. But I ran out of free credits, so this is here for now, bu in order for full functionality, change to a more powerful model like gpt-4o-mini or similar
+    \# high end lm. But I ran out of free credits, so this is here for now, bu in order for full functionality, change to a more powerful model like gpt-4o-mini or similar
     api_key=my_key, # your api key
     base_url="https://openrouter.ai/api/v1", # default base url for openrouter
 )
@@ -42,4 +42,19 @@ Locally on Pi 5:
 5. Just use the code as normal without base_url
 
 Through internet by installing on computer: installes on computer then gives it to the pi 5
-1.
+1. Repeat steps 1-4 on your computer
+2. Open Task Manager and stop ollama
+3. Set OLLAMA_HOST to 0.0.0.0
+4. Run "ollama serve"
+5. Run a command to find your port (mine was 11434)
+6. Then put that into BASE_URL in the .env
+
+This is how I ddi it in my 3rd devlog.
+*Why this is hard:* The steps 2-5 here are completely different whether you are on windows, mac or linux. Also, firewall may interfere in some of the steps,
+and making it safe is also different in every system. Because of how complicated this method is its better to just use openrouter unless you ran out of credits
+or it is not working. If your pi 5 has lots of storage, then just use Locally on Pi 5.
+Also, if using Ollama, you need to change the functions in MCP_agent to use this Ollama llm.
+
+#### Summary
+
+Install the libraries in requirements.txt, then choose Openrouter or Ollam, create an account, choose a model, then modify .env and the code accordingly.
