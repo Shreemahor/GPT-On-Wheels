@@ -7,6 +7,8 @@ Prototype:
 
 <img width="1260" height="945" alt="image" src="https://github.com/user-attachments/assets/cadff312-ba82-44c8-aa8c-f7b8f666c1b0" />
 
+https://github.com/user-attachments/assets/273ef500-5f55-4df4-99f9-baea8b3e9454
+
 ## What is it?
 
 It is a physical robot car under Raspberry Pi 5. A camera and sensors let the LLM (large language model) see where it's going.
@@ -45,7 +47,8 @@ This has the entire code for the current working prototype, paving the way for t
 
 ### 4. Outcome
 
-This folder has videos and images of the prototype performing and the AI responses. It has all of the final output of the prototype.
+This folder has videos and images of the prototype performing and the AI responses. It has all of the final output of the prototype. I managed to get this one video above in this README, by resizing and compressing it
+but the other videos in Outcome are longer and cannot be viewed in github (download).
 
 Check the folders in that order.
 
@@ -72,6 +75,12 @@ For software guidance - I watched 0 youtube videos on software - I mainly used m
 
 Also 98% of the core logic code is by me, I barely used AI, only once or twice for path errors. I got most of the hardware code from online sources though.
 
-Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but these ones have thousands of characters and lots of images to justify the time spent
+Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but these ones have thousands of characters and lots of images to justify the time spent.
 
 ## BOM
+
+<img width="1446" height="630" alt="image" src="https://github.com/user-attachments/assets/08514bb2-208d-4308-80cc-aaecc047f636" />
+Additional charges of 6.77
+<img width="371" height="348" alt="image" src="https://github.com/user-attachments/assets/a7641601-e017-4a8f-a5db-fd81d15a251c" />
+
+I cant wait to start building the full ✨🤖 GPT On Wheels ⚙️💡:)
