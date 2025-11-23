@@ -84,4 +84,11 @@ Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but the
 Additional charges of 6.77
 <img width="371" height="348" alt="image" src="https://github.com/user-attachments/assets/a7641601-e017-4a8f-a5db-fd81d15a251c" />
 
+**What I mean by this:**
+
+<img width="537" height="466" alt="image" src="https://github.com/user-attachments/assets/20773847-cecc-410a-b4b7-a49f3faeeabd" />
+
+*Aliexpress just gives a sales tax of 6.77 'As required by the relevant State Sales Tax Laws, the marketplace facilitator is required to collect Sales Tax and remit to the relevant tax authorities.'
+Just like the 20.89 for shipping, I have no control over this sales tax of 6.77*
+
 I cant wait to start building the full ✨🤖 GPT On Wheels ⚙️💡:)
