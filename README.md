@@ -58,6 +58,7 @@ This folder has videos and images of the prototype performing and the AI respons
 but the other videos in Outcome are longer and cannot be viewed in github (download).
 
 Check the folders in that order.
+***Please actually fully read each of the 4 folders - they have lots of important information and work that is not in this in this README***
 
 ## Model
 
