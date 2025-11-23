@@ -72,6 +72,6 @@ For software guidance - I watched 0 youtube videos on software - I mainly used m
 
 Also 98% of the core logic code is by me, I barely used AI, only once or twice for path errors. I got most of the hardware code from online sources though.
 
-Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but these once have thousands of characters and lots of images to justify the time spent
+Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but these ones have thousands of characters and lots of images to justify the time spent
 
 ## BOM
