@@ -40,6 +40,13 @@ This folder has detailed descriptions of components in GPT On Wheels.
 ### 2. Wiring Diagrams
 
 This has wiring diagrams for the prototype and full GPT On Wheels.
+But I am also including them in the README, here is the **wiring of the prototype:**
+
+<img width="3000" height="4363" alt="image" src="https://github.com/user-attachments/assets/2c119df9-e2c1-49df-9700-8e448bda7010" />
+
+**Wiring of the full GPT On Wheels:**
+
+<img width="3000" height="3953" alt="image" src="https://github.com/user-attachments/assets/7a4edd81-22fc-4e70-a1bc-ea80f568e65b" />
 
 ### 3. Code
 
