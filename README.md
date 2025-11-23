@@ -11,18 +11,18 @@ https://github.com/user-attachments/assets/273ef500-5f55-4df4-99f9-baea8b3e9454
 
 ## What is it?
 
-It is a physical robot car under Raspberry Pi 5. A camera and sensors let the LLM (large language model) see where it's going.
-The AI is also like a voice assistant, capable of listening and responding itself. Its mecanum wheels allow for seamless motion on all sides.
-The room for movement, perception, and action allow room for intelligence. By leveraging the hardware alongside
-Embodied AI, Agentic AI, Edge AI, Autonomy, Multimodal LLMs, and today's AI stack, GPT On Wheels could do many things that a human would:
-go around the environment, observe the environment, keep track of what's happening, speak, listen, interact, reason, think, do.
+It's my homemade physical robot car under Raspberry Pi 5. A camera and sensors let the LLM (large language model) watch what's happening.
+GPT On Wheels is also like a voice assistant, capable of listening and responding itself. Its mecanum wheels allow for seamless motion on all sides.
+The room for movement, perception of the environemnt, and action allow much room for intelligence. By leveraging the hardware alongside
+Embodied AI, Multimodal LLM, AI Agent, AI in the Edge, being Autonomous, and today's AI stack, GPT On Wheels could do many things that a human would.
+It would be able to lots like: go around the environment, observe the environment, keep track of what's happening, speak, listen, interact, reason, think, do.
 
 ## Why?
 
-In 2025, AI is changing everything. ChatGPT, Claude, Gemini, self-driving cars - every big tech company (Google, Meta, Amazon) racing to build it -
-AI search, AI shopping assistant, AI helper, AI glasses the list goes on and on. AI is consuming trillions of dollars and reshaping millions of jobs. GPT On Wheels is my answer to this wave.
-It proves that you don't need thousands of dollars to experiment with AI that is cutting-edge. GPT On Wheels makes AI accessible; All you need is 200 dollars to build your own 
-version of the real AI that is changing our world. It's how I am learning to understand AI and prepare for the future.
+In 2025, AI is changing everything. ChatGPT, Claude, Gemini, self-driving cars - every big tech company (Google, Meta, Amazon) racing for it -
+AI search, AI shopping assistant, AI helper, AI glasses, more the list goes on and on. AI is consuming trillions of dollars and changing and affecting millions of jobs. GPT On Wheels is my response.
+It proves that you don't need thousands of dollars to experiment with AI that is cutting-edge. GPT On Wheels makes AI accessible; All you need is 211 dollars to build your own 
+version of the real AI that is changing our world. It's how I am learning AI and prepare for the future.
 
 ## Prototype
 
@@ -72,6 +72,7 @@ For hardware guidance (this is not copy or guide because GPT On Wheels has lots 
 and this does not have any software, this was just guidance after I got the idea): https://www.youtube.com/watch?v=IT1uBUsOmUY
 
 For software guidance - I watched 0 youtube videos on software - I mainly used my previous knowledge and this book: https://www.discountmags.com/products/generative-ai-w-langchain-2n-paperback
+That book and its resources are where I got most of my fancy AI vocablulary.
 
 Also 98% of the core logic code is by me, I barely used AI, only once or twice for path errors. I got most of the hardware code from online sources though.
 
