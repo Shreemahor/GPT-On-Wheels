@@ -1,6 +1,6 @@
 # ✨🤖 GPT On Wheels ⚙️💡
 
-***My home-grown autonomous AI robot, thinking, understanding, ineracting with me, and not only exploring the world but also
+***My home-grown autonomous AI robot, thinking, understanding, interacting with me, and not only exploring the world but also
 Modern AI, all on rolling wheels.***
 
 Prototype:
@@ -71,5 +71,7 @@ and this does not have any software, this was just guidance after I got the idea
 For software guidance - I watched 0 youtube videos on software - I mainly used my previous knowledge and this book: https://www.discountmags.com/products/generative-ai-w-langchain-2n-paperback
 
 Also 98% of the core logic code is by me, I barely used AI, only once or twice for path errors. I got most of the hardware code from online sources though.
+
+Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but these once have thousands of characters and lots of images to justify the time spent
 
 ## BOM
