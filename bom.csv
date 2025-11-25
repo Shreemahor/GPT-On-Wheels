@@ -1,4 +1,4 @@
-Component,Quantity,Link (Aliexpress links need funding and amazon ones don't),Price without Deals,Price with Deals,Subtotal (without the 20.89 for shipping),Short Description
+Component,Quantity,Link (Aliexpress links need funding and amazon ones don't),Price without Deals,Price with Deals,Subtotal (without the 20.89 for shipping and 6.77 sales tax),Short Description
 Raspberry Pi 5,1,https://www.amazon.com/Raspberry-Pi-8GB-SC1112-Quad-core/dp/B0CK2FCG1K,0 - Owned,0 - Owned,0 - Owned,SBC for processing
 IMX519 Arducam,1,https://www.amazon.com/Arducam-IMX519-Autofocus-Raspberry-Compatible/dp/B0B3XBQM9Z,0 - Owned,0 - Owned,0 - Owned,camera for vision
 Motors and one driver,1,https://www.amazon.com/ShangHJ-Gearbox-Motor-200RPM-Wheel/dp/B09F9HNP7M,0 - Owned,0 - Owned,0 - Owned,L298N Driver and 4 motors with 4 tires
