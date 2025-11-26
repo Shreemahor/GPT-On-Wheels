@@ -69,6 +69,8 @@ option for GPT On Wheels - where sensors and code matter more than durability.
 <img width="1260" height="945" alt="image" src="https://github.com/user-attachments/assets/da179252-2af4-4dfd-a9e5-5a4a0cf10314" />
 <img width="1260" height="945" alt="image" src="https://github.com/user-attachments/assets/699494c4-41ef-4ce2-b5c5-11e9f99b1851" />
 <img width="1260" height="945" alt="image" src="https://github.com/user-attachments/assets/92d6716b-db62-4ed3-8d80-0b1d47a82a1d" />
+CAD Model for visualization (not printing):
+<img width="892" height="751" alt="image" src="https://github.com/user-attachments/assets/bdc7e365-2078-43ba-a9bb-9f48e20d3f9b" />
 
 ## Insipiration & Resources
 
