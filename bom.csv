@@ -13,7 +13,7 @@ LCD 1602 Display,1,https://www.amazon.com/interface-Backlight-controller-Raspber
 Photoresistor,1,https://www.amazon.com/DIYables-Photocell-Photoresistor-Arduino-Raspberry/dp/B0CM5YNGSF,0 - Owned,0 - Owned,0 - Owned,To detect how bright it is
 Thermistor,1,https://www.amazon.com/PATIKIL-Thermistors-Resistors-Sensitivity-Temperature/dp/B0CH1CC1S6,0 - Owned,0 - Owned,0 - Owned,To detect the temperature
 DHT11 Humidity Sensor,1,https://www.amazon.com/JESSINIE-DHT11-Digital-Temperature-Sensor/dp/B0BLG7R99R,0 - Owned,0 - Owned,0 - Owned,To detect humidity
-SG90 Mini-Servos,1,https://www.amazon.com/Aceirmc-Helicopter-Airplane-Remote-Control/dp/B081ZY23V4,0 - Owned,0 - Owned,0 - Owned,For pan-tilting the camera
+Micro-Servos,1,https://www.amazon.com/Aceirmc-Helicopter-Airplane-Remote-Control/dp/B081ZY23V4,0 - Owned,0 - Owned,0 - Owned,For pan-tilting the camera
 
 Speaker,1,https://www.aliexpress.us/item/3256809497780944.html,16.38,8.03,8.03,So the AI can talk
 Microphone,1,https://www.aliexpress.us/item/3256808573398680.html,2.12,1.95,9.98,So the AI can hear
