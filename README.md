@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/273ef500-5f55-4df4-99f9-baea8b3e9454
 It's my homemade physical robot car under Raspberry Pi 5. A camera and sensors let the LLM (large language model) watch what's happening.
 GPT On Wheels is also like a voice assistant, capable of listening and responding itself. Its mecanum wheels allow for seamless motion on all sides.
 The room for movement, perception of the environemnt, and action allow much room for intelligence. By leveraging the hardware alongside
-Embodied AI, Multimodal LLM, AI Agent, AI in the Edge, being Autonomous, and today's AI stack, GPT On Wheels could do many things that a human would.
+Embodied AI, AI Agent, AI in the Edge, being Autonomous, and today's AI stack, GPT On Wheels could do many things that a human would.
 It would be able to lots like: go around the environment, observe the environment, keep track of what's happening, speak, listen, interact, reason, think, do.
 
 ## Why?
@@ -26,8 +26,7 @@ version of the real AI that is changing our world. It's how I am learning AI and
 
 ## Prototype
 
-AI is just a complex topic, and creating this human-like robot is an incredibly large task. So, using the components I already have, I created a prototype of GPT On Wheels.
-It's this prototype's wiring diagram, videos, pictures, and code that I already have. I will expand on and use the prototype as reference for the full GPT On Wheels.
+There is a large variety of hardware components, and AI is just a complex topic, so creating this human-like robot is an incredibly large task. So, using the components I already have, I created a prototype of GPT On Wheels. It's this prototype's wiring diagram, videos, pictures, and code that I already have. I will expand on and use the prototype as reference for the full GPT On Wheels.
 
 ## Project Guide
 
