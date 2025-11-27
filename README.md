@@ -112,16 +112,17 @@ Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but the
 
 ## BOM
 
-<img width="1555" height="780" alt="image" src="https://github.com/user-attachments/assets/6c9eb229-152f-4136-a909-b642bfadd1cc" />
+<img width="1275" height="654" alt="image" src="https://github.com/user-attachments/assets/40397a2f-b763-4782-8f1c-c7ce000afc80" />
 
-Additional charges of 6.77
-<img width="371" height="348" alt="image" src="https://github.com/user-attachments/assets/a7641601-e017-4a8f-a5db-fd81d15a251c" />
+Additional charges of 6.78
+<img width="373" height="837" alt="Checkout" src="https://github.com/user-attachments/assets/e10adf11-dceb-4d3f-94cb-c298e40c72aa" />
+
 
 **What I mean by this:**
 
-<img width="537" height="466" alt="image" src="https://github.com/user-attachments/assets/20773847-cecc-410a-b4b7-a49f3faeeabd" />
+<img width="574" height="374" alt="Why-6 78" src="https://github.com/user-attachments/assets/6f397eb9-2deb-4480-9f03-10a7d825ed24" />
 
-*Aliexpress just gives a sales tax of 6.77 'As required by the relevant State Sales Tax Laws, the marketplace facilitator is required to collect Sales Tax and remit to the relevant tax authorities.'
-Just like the 20.89 for shipping, I have no control over this sales tax of 6.77*
+*Aliexpress just gives a sales tax of 6.78 'As required by the relevant State Sales Tax Laws, the marketplace facilitator is required to collect Sales Tax and remit to the relevant tax authorities.'
+Just like the 20.92 for shipping, I have no control over this sales tax of 6.78* Also sales tax and shipping and almost every component keeps fluctuating 120 total became 120.15
 
 I cant wait to start building the full ✨🤖 GPT On Wheels ⚙️💡:)
