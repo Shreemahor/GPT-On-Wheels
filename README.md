@@ -112,7 +112,8 @@ Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but the
 
 ## BOM
 
-<img width="1564" height="629" alt="image" src="https://github.com/user-attachments/assets/cd60109b-5981-4aee-960c-b13582a5db60" />
+<img width="1555" height="780" alt="image" src="https://github.com/user-attachments/assets/6c9eb229-152f-4136-a909-b642bfadd1cc" />
+
 Additional charges of 6.77
 <img width="371" height="348" alt="image" src="https://github.com/user-attachments/assets/a7641601-e017-4a8f-a5db-fd81d15a251c" />
 
