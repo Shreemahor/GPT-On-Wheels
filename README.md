@@ -1,6 +1,6 @@
 # ✨🤖 GPT On Wheels ⚙️💡
 
-***My homemade autonomous AI robot: What happens when you put a pan-tilt camera, speaker & mic, tof distance sensors, environmental sensors, and more on omni-directional wheels
+***My homemade autonomous AI robot: What happens when you put a pan-tilt camera, speaker & mic, tof distance sensors, environmental sensors, and more on wheels
 and then let an AI control the body?***
 
 Prototype:
@@ -17,7 +17,7 @@ Rough Visualization once completed:
 ## What is it?
 
 It's my homemade robot car designed to be able to do just as much as a human. I didn't just chose any sensor I could think of; each component is designed to mimic something that a human can do.
-Eyes with a rotating head: camera with pan-tilt, Amazing acrobatic movement with legs: mechanum wheels, Ears to hear: microphone, Skin that feels: photoresistor thermistor humiditure, Mouth to talk:
+Eyes with a rotating head: camera with pan-tilt, Amazing acrobatic movement with legs: wheels, Ears to hear: microphone, Skin that feels: photoresistor thermistor humiditure, Mouth to talk:
 Speaker, That intutive sense of where you're going: accelerometer/gyroscope, tof (time of flight) sensors, distance sensors, Face full of emotion: LCD Display, RGB LED, and finally most important of
 all the brain: raspberry pi 5 and a pico. Along with batteries and power supply components like the wires, MB102, powerbanks, resistors, and breadboard - the blood, tissue, and flesh, and a huge 3-tiered 
 chassis - the skeleton, it will work. but how will everything play together; humans can control and reason they are living, and you can't replicate that so GPT On Wheels seems impossible. But thats where AI
@@ -90,7 +90,7 @@ For the full version, I would replicate this design but stronger, with standoffs
 require way to much time*
 
 The front facing cubes are the TOF sensors, and the goggle-like sensors are distance sensors. This setup ensures that the powerful sensor for distance is front with the other sensro preventing side rams.
-In between the TOF sensors there is the RGB LED and behind is the L298N (closest thing I could find). The metallic sheet is the LCD Display. The red rectangular prisms are servos for pan-tilt. The pentagon on it is the camera. The wheels should be mechanum. On the second floor, behind is the raspberry pi 5. On the top floor, the black chip (hard to see in the render) represents a raspberry pi pico. The green parts on the top floor
+In between the TOF sensors there is the RGB LED and behind is the L298N (closest thing I could find). The metallic sheet is the LCD Display. The red rectangular prisms are servos for pan-tilt. The pentagon on it is the camera. On the second floor, behind is the raspberry pi 5. On the top floor, the black chip (hard to see in the render) represents a raspberry pi pico. The green parts on the top floor
 represnt the photoresistor, thermistor, accelerometer. Also there would be the mic and speaker behind the pi on floor 2, but this is not visible in the picture. Most importantly all of the various long 
 and extremley important collection of power, wires, resistors, screws, powerbanks, the MB102, breadboards and more are not represnted because the focus is on the human parallel, but they are still important.
 
@@ -112,17 +112,16 @@ Note on the JOURNAL.md: most of my devlogs are a slightly above 5 hours, but the
 
 ## BOM
 
-<img width="1275" height="654" alt="image" src="https://github.com/user-attachments/assets/40397a2f-b763-4782-8f1c-c7ce000afc80" />
+<img width="1570" height="782" alt="image" src="https://github.com/user-attachments/assets/aa9a5305-940e-48ef-ab67-7b9630e028d8" />
 
-Additional charges of 6.78
-<img width="373" height="837" alt="Checkout" src="https://github.com/user-attachments/assets/e10adf11-dceb-4d3f-94cb-c298e40c72aa" />
-
+Additional charges of 3.78
+<img width="373" height="835" alt="finalbill" src="https://github.com/user-attachments/assets/435b88dd-0cc9-4bef-a2c6-bee266285ca8" />
 
 **What I mean by this:**
 
-<img width="574" height="374" alt="Why-6 78" src="https://github.com/user-attachments/assets/6f397eb9-2deb-4480-9f03-10a7d825ed24" />
+<img width="546" height="351" alt="Why-3 78" src="https://github.com/user-attachments/assets/95db7b6b-1d11-41a4-ba3b-f231c5e39167" />
 
-*Aliexpress just gives a sales tax of 6.78 'As required by the relevant State Sales Tax Laws, the marketplace facilitator is required to collect Sales Tax and remit to the relevant tax authorities.'
-Just like the 20.92 for shipping, I have no control over this sales tax of 6.78* Also sales tax and shipping and almost every component keeps fluctuating 120 total became 120.15
+*Aliexpress just gives a sales tax of 3.78 'As required by the relevant State Sales Tax Laws, the marketplace facilitator is required to collect Sales Tax and remit to the relevant tax authorities.'
+Just like the 3.57 for shipping, I have no control over this sales tax of 3.78*
 
 I cant wait to start building the full ✨🤖 GPT On Wheels ⚙️💡:)
